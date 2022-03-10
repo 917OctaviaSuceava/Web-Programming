@@ -1,0 +1,80 @@
+body, head { background-color: rgb(173, 203, 222); 
+		overflow: auto;}
+
+h1, h2, p, a { font-family: Verdana, sans-serif; }
+
+h1 { text-align: center; }
+
+h2 { padding-left: 10px; }
+
+p { text-indent: 50px;
+    font-size: large; }
+
+.menu ul {      list-style: none;
+		margin: 0;
+		padding: 0;
+		background-color: rgb(33, 130, 145); 
+		width: 200px;
+		position: fixed;
+		height: 100%;
+}
+
+.menu ul li {   
+		position: relative;
+		
+		border-left: 1px solid rgb(43, 156, 173);
+		border-bottom: 1px solid rgb(43, 156, 173);
+		}
+
+.menu ul ul {
+		transition: all 0.3s;
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		left: 100%;
+		top: 0px;
+}
+
+.menu ul ul li {
+		position: relative;
+		border-left: 1px solid rgb(92, 174, 204);
+		border-bottom: 1px solid rgb(92, 174, 204);
+		
+		
+}
+
+.menu ul li a:hover {
+	background-color: rgb(38, 210, 237);
+	color: white;
+}
+
+
+.menu ul li:hover > ul {
+		opacity: 1;
+		visibility: visible;
+	
+}
+
+.menu ul ul li a:hover {
+		background-color: rgb(67, 108, 122);
+} 
+
+.menu ul ul li a {
+		display: block;
+		background-color: rgb(80, 154, 181);
+		font-family: Verdana, sans-serif;
+		color: white;
+		line-height: 40px;
+		padding: 8px 16px;
+		color: white;
+		text-decoration: none;
+}
+
+.menu ul li a {
+		display: block;
+		line-height: 40px;
+		padding: 8px 16px;
+		color: white;
+		text-decoration: none;
+		
+}

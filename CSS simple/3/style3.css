@@ -1,0 +1,52 @@
+h1, h2 {	
+	font-family: Verdana, Arial, sans-serif;
+	color: white;
+	text-align: center;
+}
+
+p {
+	text-indent: 50px;
+	font-size: large;
+	color: white;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+body, head {
+	background-color: rgb(71, 86, 102);
+}
+
+div {
+  display: none;
+}
+  
+span:hover + div {
+  	display: block;
+}
+
+}
+
+table {
+	width: 80%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+td, th {
+	height: 50px;
+	text-align: center;
+}
+
+table, td, th {
+	font-family: Verdana, Arial, sans-serif;
+	color: white;
+	border-style: groove;
+}
+
+img {
+	display: block;
+	border: 1px solid #ddd;
+  	border-radius: 4px;
+  	padding: 5px;
+  	width: 150px;
+	height: auto;
+}

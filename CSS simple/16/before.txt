@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style16.css">
+		<h1>Exercise 16</h1>
+	</head>
+	<body>
+		<p>Write a web page which should contain a vertical menu. The menu should be displayed in the left side of the page and should contain at least 5 items (displayed vertically, one on top of each other) and each item should be expanded on the right side to a group of at least 5 commands.</p>
+	<ul>
+		<li><a href="#m1">M1</a>
+			<div>   <ul> 
+					<li>L1</li>
+					<li>L2</li>
+					<li>L3</li>
+					<li>L4</li>
+					<li>L5</li>
+				</ul> </div></li>
+		<li><a href="#m2">M2</a>
+		<div>   <ul> 
+					<li>L1</li>
+					<li>L2</li>
+					<li>L3</li>
+					<li>L4</li>
+					<li>L5</li>
+				</ul> </div></li>
+		<li><a href="#m3">M3</a>
+		<div>   <ul> 
+					<li>L1</li>
+					<li>L2</li>
+					<li>L3</li>
+					<li>L4</li>
+					<li>L5</li>
+				</ul> </div></li>
+		<li><a href="#m4">M4</a>
+		<div>   <ul> 
+					<li>L1</li>
+					<li>L2</li>
+					<li>L3</li>
+					<li>L4</li>
+					<li>L5</li>
+				</ul> </div></li>
+		<li><a href="#m5">M5</a>
+		<div>   <ul> 
+					<li>L1</li>
+					<li>L2</li>
+					<li>L3</li>
+					<li>L4</li>
+					<li>L5</li>
+				</ul> </div></li>
+	</ul>
+	</body>
+</html>
+
+------------------
+ body, head { background-color: rgb(177, 194, 230); }
+
+h1, p, a { font-family: Verdana, sans-serif; }
+
+h1 { text-align: center; }
+
+p { text-indent: 50px;
+    font-size: large; }
+li { border-bottom: 1px solid white; }
+
+ul { 	list-style-type: none; 
+	margin: 0;
+  	padding: 0;
+	width: 150px;
+	background-color: rgb(33, 130, 145);
+	position: fixed;
+  	height: 100%;
+  	overflow: auto; }
+
+li a {  display: block;
+	padding: 8px 16px;
+	text-decoration: none;
+	color: white;
+	line-height: 50px;
+}
+div {
+	display: none;
+	transition: all 0.3s;
+	position: absolute;
+ 	left: 100%;
+	top: -10%;
+}
+li a:hover + div { display: block; 
+			position: relative;}
+
+li a:hover {
+	background-color: rgb(38, 210, 237);
+	color: white;
+}
+
