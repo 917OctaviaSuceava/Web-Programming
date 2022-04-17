@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(223, 241, 245);
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px 10px 10px 10px;
+}
+
+p, button, td {
+    font-family: Verdana, sans-serif;
+}
+
+button {
+    padding: 5px 5px 5px 5px;
+}

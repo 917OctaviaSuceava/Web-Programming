@@ -1,0 +1,42 @@
+
+body {
+    overflow: hidden;
+    background-color: rgb(158, 222, 179);
+}
+
+#background {
+    display: none;
+    position: fixed;
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#large-img {
+    margin: auto;
+    display: block;
+    width: 500px;
+    height: 600px;
+}
+
+
+ul {
+    position: absolute;
+    top: 25%;
+    left: 0;
+
+}
+li {
+    position: absolute;
+    list-style: none;
+    width: 200px;
+}
+img {
+    /*width: 100%;
+    height: 100%;
+    object-fit: contain;*/
+    height: 280px;
+
+    /*width: 200px;*/
+}
