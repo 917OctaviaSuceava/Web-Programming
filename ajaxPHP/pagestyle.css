@@ -1,0 +1,94 @@
+
+body
+{
+    background-image: linear-gradient(rgba(210, 233, 247, 255), rgba(135, 176, 201, 255));
+    background-attachment: fixed
+}
+
+p, span {
+    font-family: Verdana, sans-serif;
+}
+
+.top-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 300px;
+    overflow: auto;
+    background-color: rgba(81, 168, 176);
+}
+
+
+.top-menu ul li {
+    float: left;
+    border: 1px solid rgba(70, 158, 166);
+
+}
+
+.top-menu ul li:hover {
+    background-color: rgb(55, 133, 140);
+}
+
+.top-menu ul li a {
+    font-family: Calibri, sans-serif;
+    display: block;
+    color: rgb(211, 237, 240);
+    /*
+    rgba(29, 75, 79,255);
+     */
+    text-align: center;
+    padding: 10px 80px 10px 70px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(74, 80, 84);
+}
+
+
+form
+{
+    margin: 30px;
+}
+
+input[type=text] {
+    margin-top: 10px;
+    height: 27px;
+    width: 350px;
+    border: 2px solid rgb(114, 140, 143);
+    background: rgb(225, 238, 240);
+    font-family: Verdana, sans-serif;
+}
+
+input[type=submit]
+{
+    border: 2px solid rgb(114, 140, 143);
+    background: rgb(225, 238, 240);
+    padding: 7px 14px 7px 14px;
+    font-family: Verdana, sans-serif;
+    margin-top:10px;
+}
+
+.all_recipes_button, .delete_button, .add_button, .update_button, .filter_all_btn, .filter_btn
+{
+    border: 2px solid rgb(114, 140, 143);
+    background: rgb(225, 238, 240);
+    padding: 7px 14px 7px 14px;
+    font-family: Verdana, sans-serif;
+    margin-top:10px;
+}
+
+
+label{
+    font-family: Verdana, sans-serif;
+    margin-right: 10px;
+}
+/*
+input label {
+    margin-right: 40px;
+}
+
+
+#add_page {
+    display: none;
+}*/

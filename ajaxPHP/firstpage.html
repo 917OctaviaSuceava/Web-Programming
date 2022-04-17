@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pagestyle.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="browseRecipesJS.js"></script>
+    <script src="deleteRecipeJS.js"></script>
+    <script src="addRecipeJS.js"></script>
+    <script src="updateRecipeJS.js"></script>
+    <script src="filterRecipesJS.js"></script>
+    <title>Recipes</title>
+</head>
+<body>
+
+    <header>
+        <div class="top-menu">
+            <ul> <!--window.location.href=''-->
+                <li><a href="#display" id="#display_menu">Browse recipes</a></li>
+                <li><a href="#add" id="#add_menu">Add recipe</a></li>
+                <li><a href="#filter" id="#filter_menu">Filter recipes</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="add_page" id="#add_page" style="display: none">
+        <form id="#recipe_form">
+            <label for="authorname">Author Name:</label> <input type="text" name="authorname" id="authorname"><br>
+            <label for="name">Recipe Name:</label> <input type="text" name="name" id="name"><br>
+            <label for="type">Recipe Type:</label> <input type="text" name="type" id="type"><br>
+            <label for="time">Recipe Time Required (in minutes):</label> <input type="text" name="time" id="time"><br>
+            <label for="description">Recipe Description:</label>
+                <textarea name="description" id="description" rows="7" cols="50"> </textarea><br>
+            <button class="add_button" id="#add_button" type="submit" onclick="addRecipe()">
+                <a href="#add">Add</a>
+            </button>
+        </form>
+        <section id="#status">
+
+        </section>
+    </div>
+
+    <div class="browse_page" id="#browse_page" style="display: none">
+        <div id="#see_all">
+            <p>Selected ID: <span id="#selected_id"></span></p>
+            <button class="all_recipes_button" type="submit" onclick="getAll()">
+                <a href="#all">See all recipes</a>
+            </button>
+            <section id="#all_recipes">
+
+            </section>
+            <section id="#buttons" style="display: none">
+                <button class="delete_button" id="#delete_button" onclick="deleteRecipe()">
+                    <a href="#del">Delete</a>
+                </button>
+                <button class="update_button" id="#update_button" onclick="updateRecipe()">
+                    <a href="#upd">Update</a>
+                </button>
+            </section>
+
+            <form id="#update_form" style="display: none">
+                <label for="authorname">Author Name:</label> <input type="text" name="authorname" id="authorname1"><br>
+                <label for="name">Recipe Name:</label> <input type="text" name="name" id="name1"><br>
+                <label for="type">Recipe Type:</label> <input type="text" name="type" id="type1"><br>
+                <label for="time">Recipe Time Required (in minutes):</label> <input type="text" name="time" id="time1"><br>
+                <label for="description">Recipe Description:</label>
+                <textarea name="description" id="description1" rows="7" cols="50"> </textarea><br>
+                <span id="success_update"></span>
+            </form>
+        </div>
+    </div>
+
+    <div class="filter_page" id="#filter_page" style="display: none">
+        <h2 style="font-family: Verdana, sans-serif"></h2>
+        <button type="submit" class="filter_all_btn" onclick="getAllFilter()">
+            <a href="#filterall">See all recipes</a>
+        </button><br>
+        <label for="filter_type">Recipe Type: </label><input type="text" name="filter_type" id="filter_type"><br>
+
+        <button type="submit" class="filter_btn" onclick="getByType()">
+            <a href="#filtersome">Filter by type</a>
+        </button>
+        <section id="#filter_all">
+
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("#add_menu").onclick = function() {
+            document.getElementById("#browse_page").style.display = "none";
+            document.getElementById("#filter_page").style.display = "none";
+
+            document.getElementById("#add_page").style.display = "block";
+        }
+        document.getElementById("#display_menu").onclick = function() {
+            document.getElementById("#filter_page").style.display = "none";
+            document.getElementById("#add_page").style.display = "none";
+            document.getElementById("#browse_page").style.display = "block";
+        }
+        document.getElementById("#filter_menu").onclick = function() {
+            document.getElementById("#filter_page").style.display = "block";
+            document.getElementById("#add_page").style.display = "none";
+            document.getElementById("#browse_page").style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>
