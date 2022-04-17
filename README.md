@@ -12,4 +12,6 @@
 
 5. JavaScript
 6. Jquery
-7. AJAX
+    - abcd
+7. Jquery
+8. AJAX, PHP, JSON
