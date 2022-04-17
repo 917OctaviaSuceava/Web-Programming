@@ -12,7 +12,9 @@
 
 5. JavaScript
     - Write a javascript which sorts in ascending order an array of numbers which are introduced by the user in a textarea or input tag. The sorted array (which can have any length) will be displayed in a table with 5 columns and n/5 lines where n is the length of the array.
+
 6. Jquery
-    - abcd
-7. Jquery
-8. AJAX, PHP, JSON
+    - Write a web page which displays in the middle of the browser window a horizontal slider containing a list of images. The slider should continuously slide from the left to the right side of the browser window. Each image that exits the browser window on the right side should enter the browser window on the left side. The sliding should be animated. If the user clicks on an image, the sliding is paused and a larger version of that window pops in the center of the browser window (just like images appear in the Lightbox javascript library). If the user clicks anywhere on this large image, the image dissapears and the sliding of the horizontal image bar is resumed.
+
+7. AJAX, PHP, JSON
+    - Write a web application for managing food recipes. The application should maintain various information about a recipe in the database (i.e. author, name, type, the actual recipe etc.). The application should implement: recipes browsing (use AJAX for retrieving recipes of a specific type), adding, removing and updating a recipe. Also, on the browsing page, the filter used for the previous browsing action (i.e. recipe type), should be displayed (do this in javascript).
