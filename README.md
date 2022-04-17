@@ -11,7 +11,7 @@
     - Develop an html+css web document that looks like the following web page: https://www.python.org/. You should clone about one screen of this web page (not the whole web page) and your html document should look approximately 90% as the given web page. No interactivity should be added (e.g. javascript, :hover effects etc.).
 
 5. JavaScript
-    - Write a javascript which sorts in ascending order an array of numbers which are introduced by the user in a "textarea" or "input type=text" tag. The sorted array (which can have any length) will be displayed in a <table> with 5 columns and n/5 lines where n is the length of the array.
+    - Write a javascript which sorts in ascending order an array of numbers which are introduced by the user in a textarea or input tag. The sorted array (which can have any length) will be displayed in a table with 5 columns and n/5 lines where n is the length of the array.
 6. Jquery
     - abcd
 7. Jquery
