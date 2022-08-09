@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/pagestyle.css" type="text/css" rel="stylesheet">
+</head>
+
+<header>
+    <div class="top-menu">
+        <ul> <!--window.location.href=''-->
+            <li><a href="#display" id="#display_menu" onclick="location.href='browse/browseRecipesHTML.html'">Browse recipes</a></li>
+            <li><a href="#add" id="#add_menu" onclick="location.href='add/addRecipeHTML.html'">Add recipe</a></li>
+            <li><a href="#filter" id="#filter_menu">Filter recipes</a></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <div class="browse_page" id="#browse_page">
+        <div id="#see_all">
+            <p>Selected ID: <span id="#selected_id"></span></p>
+            <button class="all_recipes_button" type="submit" onclick="getAll()">
+                <a href="#all">See all recipes</a>
+            </button>
+            <section id="#all_recipes">
+
+            </section>
+            <section id="#buttons" style="display: none">
+                <button class="delete_button" id="#delete_button" onclick="deleteRecipe()">
+                    <a href="#del">Delete</a>
+                </button>
+                <button class="update_button" id="#update_button" onclick="updateRecipe()">
+                    <a href="#upd">Update</a>
+                </button>
+            </section>
+
+            <form id="#update_form" style="display: none">
+                <label for="authorname">Author Name:</label> <input type="text" name="authorname" id="authorname"><br>
+                <label for="name">Recipe Name:</label> <input type="text" name="name" id="name"><br>
+                <label for="type">Recipe Type:</label> <input type="text" name="type" id="type"><br>
+                <label for="time">Recipe Time Required (in minutes):</label> <input type="text" name="time" id="time"><br>
+                <label for="description">Recipe Description:</label>
+                <textarea name="description" id="description" rows="7" cols="50"> </textarea><br>
+                <span id="success_update"></span>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
